@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>GO GREEN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="s1.css">
+<link rel="stylesheet" href="s2.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="file:///C:/Users/Sanda%20Leung/Desktop/Page%200.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="file:///C:/Users/Sanda%20Leung/Desktop/page%201.html" class="w3-button w3-block w3-black">ABOUT US</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="file:///C:/Users/Sanda%20Leung/Desktop/Page%202.html" class="w3-button w3-block w3-black">RECOGNITION</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="file:///C:/Users/Sanda%20Leung/Desktop/Page%203.html" class="w3-button w3-block w3-black">BIN</a>
+    </div>
+  </div>
+</div>
+
+<img src="p3.jfif" style="width:1600px;height:600px;">
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px"> 
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT GO GREEN</span></h5>testing</p>
+    <p>testing too</p>
+    <p>testing three</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NEWS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Today</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Yesterday</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>How to recycle your old laptops, phones, cameras and batteries for free</h5>
+      <p class="w3-text-grey">Don't throw away your old electronics, even if you've upgraded to new devices. Here's what to do.</p><br>
+    
+      <h5>How to Turn Plastic Waste From Your Recycle Bin Into Profit</h5>
+      <p class="w3-text-grey">Become a billionaire just by recycling, according to Matthew F. Oggway from Kilo Tech University.</p><br>
+    
+      <h5>Local artist Schism raises awareness about waste</h5>
+      <p class="w3-text-grey">Schism created pieces of art from recycled materials to express his environmental concern for Greenville City.</p><br>
+    
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Greenville aims to recycle $2.3B worth of household waste</h5>
+      <p class="w3-text-grey">Statistics show that organic waste makes up 52% of household waste while paper makes up 10% and plastic waste 6%. The government plans to ...</p><br>
+    
+      <h5>Cape Town revitalizes E-Waste, raises recycling awareness</h5>
+      <p class="w3-text-grey">Only 17.4% of 2019's e-waste was collected and recycled. This means massive amounts of gold, silver, copper, and other precious metals are wasted.</p><br>
+    
+      <h5>Global electronic waste up 21% in five years, and recycling isn't keeping up</h5>
+      <p class="w3-text-grey">Since 2014, the amount of recycled e-waste has only grown by 1.8 million tonnes each year. But the growth of the e-waste generated is more than 4 times of those being recycled.</p><br>
+    
+    </div>  
+  </div>
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

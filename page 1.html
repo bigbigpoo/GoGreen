@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>GO GREEN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="s1.css">
+<link rel="stylesheet" href="s2.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="file:///C:/Users/Sanda%20Leung/Desktop/Page%200.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="file:///C:/Users/Sanda%20Leung/Desktop/page%201.html" class="w3-button w3-block w3-black">ABOUT US</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="file:///C:/Users/Sanda%20Leung/Desktop/Page%202.html" class="w3-button w3-block w3-black">RECOGNITION</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="file:///C:/Users/Sanda%20Leung/Desktop/Page%203.html" class="w3-button w3-block w3-black">BIN</a>
+    </div>
+  </div>
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT OUR TEAM---Bug Slayers</span></h5>testing</p>
+    <p>testing too
+    <p>testing three</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TEAM MEMBERS</span></h5>
+    <h1>Eric Dai Mangki</h1>
+    <p>Ask him for self-intro.</p>
+    <h1>Sanda Leung</h1>
+    <p>PKU year 1 student studying computer science, who like playing video games.</p>
+    <h1>Felix Ho</h1>
+    <p>I am gay.</p>
+    <h1>Ryan Liu</h1>
+    <p>Ask him for self-intro.</p>
+    <h1>Matthew Xiao</h1>
+    <p>Student studying PPE in Durham. Can’t code, can’t do maths, and failing courses.</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
